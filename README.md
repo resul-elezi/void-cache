@@ -10,4 +10,4 @@ VoidCache is a simple yet powerful browser extension that clears your cache with
 ## 📦 Manual Installation
 1. Download or clone the repository:  
    ```sh
-   git clone https://github.com/resul-elezi/void-cache.git
+   https://github.com/resul-elezi/void-cache.git
