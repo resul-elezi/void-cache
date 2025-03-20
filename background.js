@@ -6,7 +6,7 @@ chrome.action.onClicked.addListener(() => {
       "cookies": false,
       "history": false
     }, () => {
-      alert("Cache has been deleted!");
+      console.log("Cache has been deleted!");
     });
   });
   
