@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    width: 200px;
+    width: 9.375rem;
     padding: 20px;
 }
 
@@ -12,6 +12,7 @@ button {
     padding: 10px;
     cursor: pointer;
     width: 100%;
+    border-radius: .5rem;
 }
 
 button:hover {
