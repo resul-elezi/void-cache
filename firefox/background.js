@@ -1,12 +1,18 @@
 'use strict';
 
-chrome.action.onClicked.addListener(() => {
-    chrome.browsingData.remove({}, {
-      "cache": true,
-      "cookies": false,
-      "history": false
-    }, () => {
-      console.log("Cache has been deleted!");
-    });
+browser.browserAction.onClicked.addListener(() => {
+  browser.browsingData.remove({}, {
+    cache: true,
+    cookies: false,
+    history: false,
+    downloads: false,
+    formData: false,
+    passwords: false
+  }).then(() => {
+    console.log("Cache cleared successfully.");
+  }).catch((error) => {
+    console.error("Error clearing cache:", error);
   });
+});
+
   
